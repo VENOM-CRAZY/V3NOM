@@ -14,7 +14,7 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    TOKEN = "1738957760:AAHISjNNW6uXG1i9cO_bUlo0JEwMPmku_v8"
+    TOKEN = "1738957760:AAE-1EK1YNXygAVNh8iWgb_VvmKXp3KqWCI"
 
     try:
         OWNER_ID = 2079458478
@@ -41,7 +41,7 @@ class Config(object):
     DRAGONS = ""
     BL_CHATS = None
     ALLOW_EXCL = True
-    TOKEN = "1738957760:AAHISjNNW6uXG1i9cO_bUlo0JEwMPmku_v8"
+    TOKEN = "1738957760:AAE-1EK1YNXygAVNh8iWgb_VvmKXp3KqWCI"
     SUPPORT_CHAT = "V3NOM_Support"
     SPAMWATCH_API = "HYx~bySNWNSftcL3O_z9h5qHJGK2OSi0WnRKC7nIAtlLFKPXid4wGtnFiePwjmmw"
     REDIS_URL = "redis://:pf5a846bd88f2da1b37e94c9a66af70d4413d6a9af501d251661fc66d2bac54f8@ec2-34-227-200-242.compute-1.amazonaws.com:24559"
@@ -54,7 +54,7 @@ class Production(Config):
 class Development(Config):
     LOGGER = True
 
-    TOKEN = "1738957760:AAHISjNNW6uXG1i9cO_bUlo0JEwMPmku_v8"
+    TOKEN = "1738957760:AAE-1EK1YNXygAVNh8iWgb_VvmKXp3KqWCI"
 
     try:
         OWNER_ID = 2079458478
@@ -74,7 +74,7 @@ class Development(Config):
     NO_LOAD = "rss"
     STRICT_GBAN = True
     ALLOW_EXCL = True
-    TOKEN = "1738957760:AAHISjNNW6uXG1i9cO_bUlo0JEwMPmku_v8"
+    TOKEN = "1738957760:AAE-1EK1YNXygAVNh8iWgb_VvmKXp3KqWCI"
     SUPPORT_CHAT = "V3NOM_Support"
     SPAMWATCH_API = "HYx~bySNWNSftcL3O_z9h5qHJGK2OSi0WnRKC7nIAtlLFKPXid4wGtnFiePwjmmw"
     REDIS_URL = "redis://:pf5a846bd88f2da1b37e94c9a66af70d4413d6a9af501d251661fc66d2bac54f8@ec2-34-227-200-242.compute-1.amazonaws.com:24559"
