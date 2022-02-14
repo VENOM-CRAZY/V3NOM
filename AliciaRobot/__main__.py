@@ -8,7 +8,7 @@ from typing import Optional
 from telethon.sessions import string
 
 from AliciaRobot import (
-
+    ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
     LOGGER,
@@ -77,14 +77,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ[🤗](https://telegra.ph/file/942dde39dae4781cb5d60.jpg), ɪᴍ VENOM ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ[🤗](https://telegra.ph/file/2d3c7efe45ccd0ac4bea8.jpg), ɪᴍ ᴀʟɪᴄɪᴀ ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ😉
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴀʟɪᴄɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/V3NOM_MUSIC_bot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴀʟɪᴄɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AliciaGroup_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="alicia_"),
@@ -99,11 +99,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-ʜɪ.. ɪ'ᴍ VENOM [❤️](https://telegra.ph/file/942dde39dae4781cb5d60.jpg) 
+ʜɪ.. ɪ'ᴍ ᴀʟɪᴄɪᴀ[❤️](https://telegra.ph/file/ad68353339ab4ca4423bf.jpg) 
 ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
 
 
-ALICIA_IMG = "https://telegra.ph/file/942dde39dae4781cb5d60.jpg"
+ALICIA_IMG = "https://telegra.ph/file/2d3c7efe45ccd0ac4bea8.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @A_viyu \
@@ -363,7 +363,7 @@ def alicia_about_callback(update, context):
     query = update.callback_query
     if query.data == "alicia_":
         query.message.edit_text(
-            text=""" ℹ️ ɪ'ᴍ *VENOM*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
+            text=""" ℹ️ ɪ'ᴍ *ᴀʟɪᴄɪᴀ*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
                  \n❍ ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.
                  \n❍ ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.
                  \n❍ ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.
@@ -399,7 +399,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *Alicia*
-                 \nHere is the [Source Code](https://pornhub.com) .""",
+                 \nHere is the [Source Code](https://github.com/H1M4N5HU0P/AliciaRobotOP) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -646,7 +646,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 2079458478 and DONATION_LINK:
+        if OWNER_ID != 254318997 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -694,7 +694,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            stringz = ["Yes I'm Alive😊", "venom is in your service again🤗", "I'm Working Back🤓", "I'm Still Alive Dude 😉"]
+            stringz = ["Yes I'm Alive😊", "Alicia is in your service again🤗", "I'm Working Back🤓", "I'm Still Alive Dude 😉"]
             dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", random.choice(stringz))
         except Unauthorized:
             LOGGER.warning(
