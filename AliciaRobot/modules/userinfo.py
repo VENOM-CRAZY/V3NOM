@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n┣|• This User Is My 'Creator'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n┣|• This user is member of 'Alicia Developer 'Team'."
+        text += "\n┣|• This user is member of 'Venom Developer 'Team'."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n┣|• This person is 'Sudo'. his Power level is near to my 'Owner' "
@@ -299,7 +299,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n┣|• This person is my 'Sudo'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n┣|• Theis person is from 'Alicia Assosication'."
+        text += "\n┣|• Theis person is from 'venom ssosication'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n┣|• This person is from 'Alicia Demons Army'."
