@@ -35,7 +35,7 @@ async def lego(event):
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @MafiaBot_Support, {e}')
+   await event.reply(f'Error Report @v3nom_Support, {e}')
 
 
 
@@ -47,7 +47,7 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
  ❍ /logo text :  Create your logo with your name
- ❍ /logo Alicia ; Robot :  use ; for write in next line
+ ❍ /logo venom ; Robot :  use ; for write in next line
  ❍ /blogo text :  Create border logo with your name
  """
 
