@@ -77,14 +77,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʏ ᴛʜᴇʀᴇ[🤗](https://telegra.ph/file/2d3c7efe45ccd0ac4bea8.jpg), ɪᴍ ᴀʟɪᴄɪᴀ ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʏ ᴛʜᴇʀᴇ[🤗](https://telegra.ph/file/2d3c7efe45ccd0ac4bea8.jpg), ɪᴍ VENOM ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴏʟ ꜰᴇᴀᴛᴜʀᴇꜱ😉
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴀʟɪᴄɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AliciaGroup_bot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴀʟɪᴄɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/v3nom_music_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="alicia_"),
@@ -99,11 +99,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-ʜɪ.. ɪ'ᴍ ᴀʟɪᴄɪᴀ[❤️](https://telegra.ph/file/ad68353339ab4ca4423bf.jpg) 
+ʜɪ.. ɪ'ᴍ VENOM[❤️](https://telegra.ph/file/5c25ab7e0eb5b55bd82b3.jpg) 
 ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
 
 
-ALICIA_IMG = "https://telegra.ph/file/2d3c7efe45ccd0ac4bea8.jpg"
+ALICIA_IMG = "https://telegra.ph/file/5c25ab7e0eb5b55bd82b3.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @A_viyu \
@@ -363,7 +363,7 @@ def alicia_about_callback(update, context):
     query = update.callback_query
     if query.data == "alicia_":
         query.message.edit_text(
-            text=""" ℹ️ ɪ'ᴍ *ᴀʟɪᴄɪᴀ*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
+            text=""" ℹ️ ɪ'ᴍ *VENOM*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
                  \n❍ ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.
                  \n❍ ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.
                  \n❍ ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.
@@ -371,7 +371,7 @@ def alicia_about_callback(update, context):
                  \n❍ ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.
                  \n❍ ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴ'ꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ 
                  \n\n_ᴀʟɪᴄɪᴀ'ꜱ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠ3.0_
-                 \nʜᴇʀᴇ ɪꜱ ᴛʜᴇ [💾ʀᴇᴘᴏꜱɪᴛᴏʀʏ](https://github.com/H1M4N5HU0P/AliciaRobotOP).                  
+                 \nʜᴇʀᴇ ɪꜱ ᴛʜᴇ [💾ʀᴇᴘᴏꜱɪᴛᴏʀʏ](https://github.com/VENOM-CRAZY/V3NOM).                  
                  \n\nɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀʟɪᴄɪᴀ, ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴀᴛ""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -398,8 +398,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Alicia*
-                 \nHere is the [Source Code](https://github.com/H1M4N5HU0P/AliciaRobotOP) .""",
+            text=""" Hi..🤗 I'm *VENOM*
+                 \nHere is the [Source Code](https://github.com/VENOM-CRAZY/V3NOM) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -694,7 +694,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            stringz = ["Yes I'm Alive😊", "Alicia is in your service again🤗", "I'm Working Back🤓", "I'm Still Alive Dude 😉"]
+            stringz = ["Yes I'm Alive😊", "VENOM is in your service again🤗", "I'm Working Back🤓", "I'm Still Alive Dude 😉"]
             dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", random.choice(stringz))
         except Unauthorized:
             LOGGER.warning(
