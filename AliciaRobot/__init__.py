@@ -39,12 +39,12 @@ if ENV:
     TOKEN = os.environ.get("TOKEN", "1613196478:AAHzs8A_73OkOBISpQ5emx5ToDxMlJu0XmU")
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", 2079458478)
+        OWNER_ID = int(os.environ.get("OWNER_ID", 1212368262))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", -1001204088829)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "VENOMxCRAZY")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "H1M4N5HU0P")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
@@ -95,7 +95,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "v3nom_Support")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "MafiaBot_Support")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "sJsaTYZnYqTR7z~pq8OAdVj2UIktizitY5k6ivnErXkArICQv_ZbNmG6HMDlE7Lg")
     STRING_SESSION = os.environ.get("STRING_SESSION", "1AZWarzsBu4JME17PtDItxFthl0IJ0WBrnkP8EyL7Wk-G9xw8ysL40HvXZguTOLXc6IRXhbehHL7rSzPRc-AhT4Q5bbLj7VAYKda_d-TBcdckJZENCOD4daN8xGDX41m_sTRwXBBvYJg7M3OJywow_nN89TfbEu1Ui3jAS46Heom1QLdw9n5Aewm9zxjQrWF_99fZIlYId-Akoz7FxA88TKOC_NJDwt_ST-u6xAQJNhXcUxfuewoEOtyGuoMezi5v5bIMTBiGNKkojlxHCHS2qnNCQYlBLiklIS_xGVPbdDw95JPAYfgwNRgPMUaBvXyu3Qd_4iGIIoL-riBZJ923fCO9m-bZRFI=")
@@ -131,12 +131,12 @@ else:
     TOKEN = "1613196478:AAHzs8A_73OkOBISpQ5emx5ToDxMlJu0XmU"
 
     try:
-        OWNER_ID = 2079458478
+        OWNER_ID = 1212368262
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
     JOIN_LOGGER = -1001204088829
-    OWNER_USERNAME = "VENOMxCRAZY"
+    OWNER_USERNAME = "H1M4N5HU0P"
 
     EVENT_LOGS = -1001459323267
     URL = "https://aliciarobot.herokuapp.com/"
@@ -182,12 +182,12 @@ else:
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(2079458478)
-DEV_USERS.add(1920507972)
-DEV_USERS.add(1257356127)
-DEV_USERS.add(5169493555)
-DEV_USERS.add(5241147650)
-DRAGONS.add(5242759005)
-DRAGONS.add(936481432)
+DEV_USERS.add(1212368262)
+DEV_USERS.add(1936648846)
+DEV_USERS.add(1957781414)
+DEV_USERS.add(1949856187)
+DRAGONS.add(2118437554)
+DRAGONS.add(2079458478)
 
 if not SPAMWATCH_API:
     sw = None
