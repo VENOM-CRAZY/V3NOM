@@ -99,7 +99,7 @@ async def makelogo(event):
                   
             fname2 = "LogoByAliciaRobot.png"
             blueimg.save(fname2, "png")
-            await bot.send_file(event.chat_id, fname2, caption="Made By @AliciaGroup_bot")
+            await bot.send_file(event.chat_id, fname2, caption="Made By @v3nom_music_bot")
             if os.path.exists(fname2):
                os.remove(fname2)
             if os.path.exists(randFont):
@@ -109,4 +109,4 @@ async def makelogo(event):
     
 
         except Exception as e:
-            await msg.edit(f'Error Report @MafiaBot_Support, {e} \nmaybe error with font {randFont}, you should try again.')
+            await msg.edit(f'Error Report @v3nom_Support, {e} \nmaybe error with font {randFont}, you should try again.')
