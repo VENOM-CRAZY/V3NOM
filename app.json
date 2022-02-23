@@ -1,5 +1,5 @@
 {
-      "name": "AliciaRobot",
+      "name": "V3NOMRobot",
       "description": "Telegram group management bot.",
       "logo": "https://telegra.ph/file/5afc6d7c3f48aa6d67000.jpg",      
       "keywords": [
@@ -9,7 +9,7 @@
          "manager",
          "alicia"
       ],   
-   "repository": "https://github.com/H1M4N5HU0P/AliciaRobot",
+   "repository": "https://github.com/VENOM-CRAZY/V3NOM",
    "addons": [
       {
          "options": {
